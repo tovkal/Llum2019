@@ -12,6 +12,13 @@
 		95039CAA2215BFD2007977B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95039CA82215BFD2007977B1 /* Main.storyboard */; };
 		95039CAC2215BFD4007977B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95039CAB2215BFD4007977B1 /* Assets.xcassets */; };
 		95039CAF2215BFD4007977B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95039CAD2215BFD4007977B1 /* LaunchScreen.storyboard */; };
+		95039CB82215C4DF007977B1 /* PlacesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95039CB72215C4DF007977B1 /* PlacesResponse.swift */; };
+		95039CBA2215C564007977B1 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95039CB92215C564007977B1 /* Place.swift */; };
+		95039CBC2215C5EE007977B1 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95039CBB2215C5EE007977B1 /* Section.swift */; };
+		95039CBF2215D65A007977B1 /* CalloutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95039CBE2215D65A007977B1 /* CalloutView.swift */; };
+		95039CC12215D79A007977B1 /* CalloutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95039CC02215D79A007977B1 /* CalloutView.xib */; };
+		95039CC32215DBE3007977B1 /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95039CC22215DBE3007977B1 /* PlaceAnnotation.swift */; };
+		95039CC52215DD98007977B1 /* PlaceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95039CC42215DD98007977B1 /* PlaceDetailsViewController.swift */; };
 		99D5D705177A926FB8C21265 /* Pods_Llum2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A47B38B3C9E21FDD51ECD50C /* Pods_Llum2019.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +32,13 @@
 		95039CAB2215BFD4007977B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95039CAE2215BFD4007977B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95039CB02215BFD4007977B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95039CB72215C4DF007977B1 /* PlacesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesResponse.swift; sourceTree = "<group>"; };
+		95039CB92215C564007977B1 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		95039CBB2215C5EE007977B1 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		95039CBE2215D65A007977B1 /* CalloutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalloutView.swift; sourceTree = "<group>"; };
+		95039CC02215D79A007977B1 /* CalloutView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalloutView.xib; sourceTree = "<group>"; };
+		95039CC22215DBE3007977B1 /* PlaceAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAnnotation.swift; sourceTree = "<group>"; };
+		95039CC42215DD98007977B1 /* PlaceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailsViewController.swift; sourceTree = "<group>"; };
 		A47B38B3C9E21FDD51ECD50C /* Pods_Llum2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Llum2019.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -46,7 +60,6 @@
 				40991CF953EEB26520687214 /* Pods-Llum2019.debug.xcconfig */,
 				11E7F3CCDFB72DA781C1DD23 /* Pods-Llum2019.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -79,14 +92,37 @@
 		95039CA32215BFD2007977B1 /* Llum2019 */ = {
 			isa = PBXGroup;
 			children = (
+				95039CBD2215D651007977B1 /* Views */,
+				95039CB62215C4B9007977B1 /* Model */,
 				95039CA42215BFD2007977B1 /* AppDelegate.swift */,
 				95039CA62215BFD2007977B1 /* ViewController.swift */,
+				95039CC42215DD98007977B1 /* PlaceDetailsViewController.swift */,
 				95039CA82215BFD2007977B1 /* Main.storyboard */,
 				95039CAB2215BFD4007977B1 /* Assets.xcassets */,
 				95039CAD2215BFD4007977B1 /* LaunchScreen.storyboard */,
 				95039CB02215BFD4007977B1 /* Info.plist */,
 			);
 			path = Llum2019;
+			sourceTree = "<group>";
+		};
+		95039CB62215C4B9007977B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				95039CB72215C4DF007977B1 /* PlacesResponse.swift */,
+				95039CB92215C564007977B1 /* Place.swift */,
+				95039CBB2215C5EE007977B1 /* Section.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		95039CBD2215D651007977B1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				95039CBE2215D65A007977B1 /* CalloutView.swift */,
+				95039CC02215D79A007977B1 /* CalloutView.xib */,
+				95039CC22215DBE3007977B1 /* PlaceAnnotation.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +188,7 @@
 				95039CAF2215BFD4007977B1 /* LaunchScreen.storyboard in Resources */,
 				95039CAC2215BFD4007977B1 /* Assets.xcassets in Resources */,
 				95039CAA2215BFD2007977B1 /* Main.storyboard in Resources */,
+				95039CC12215D79A007977B1 /* CalloutView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +226,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Llum2019/Pods-Llum2019-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCoreLocation/RxCoreLocation.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -197,6 +235,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCoreLocation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -213,8 +252,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95039CBC2215C5EE007977B1 /* Section.swift in Sources */,
+				95039CB82215C4DF007977B1 /* PlacesResponse.swift in Sources */,
+				95039CC52215DD98007977B1 /* PlaceDetailsViewController.swift in Sources */,
 				95039CA72215BFD2007977B1 /* ViewController.swift in Sources */,
 				95039CA52215BFD2007977B1 /* AppDelegate.swift in Sources */,
+				95039CBA2215C564007977B1 /* Place.swift in Sources */,
+				95039CBF2215D65A007977B1 /* CalloutView.swift in Sources */,
+				95039CC32215DBE3007977B1 /* PlaceAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
